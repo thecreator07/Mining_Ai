@@ -4,22 +4,22 @@ import FlexBetween from "../layout/Flexbetween";
 const Navbar = () => {
   return (
     <>
-      <FlexBetween className="" borderRadius={"10px"} style={{backgroundColor:"whitesmoke"}} padding={"0.75rem 2rem"} marginX={"5rem"} marginY={"2rem"}>
+      <FlexBetween className="" borderRadius={"10px"} style={{backgroundColor:"#FFFFFF"}} padding={"0.75rem 2rem"} marginX={"5rem"} marginY={"2rem"}>
         <div className=" h-full">
           {/* <img src="" alt=""> */}
-          <h1 className={`text-black text-3xl text-ellipsis font-semibold `}>return 0</h1>
+          <h1 className={`text-black text-3xl text-ellipsis font-semibold cursor-pointer`}>return 0</h1>
         </div>
         <div className="">
           <ul className="flex gap-5 justify-between ">
-            {["home", "Chatbot", "Consultancy", "Doc Analysis", "About Us"].map(
+            {["Home", "Chatbot", "Consultancy", "Doc Analysis", "About Us"].map(
               (item, index) => (
                 <>
                   <li
                     key={index}
                     style={{
-                      color: item === "home" ? "rgb(206 138 10)" : "black",
+                      color: item === "Home" ? "rgb(206 138 10)" : "black",
                     }}
-                    className="font-medium text-base"
+                    className="font-medium text-base cursor-pointer"
                   >
                     {item}
                   </li>

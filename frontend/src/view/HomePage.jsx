@@ -1,7 +1,8 @@
 import React from "react";
 import Navbar from "./NavBar";
 import videos from "../assets/mining1.mp4";
-import pic from "../assets/react.svg";
+import Welcome from "../components/Home/welcome";
+import Containers from "../components/Home/Containers";
 const Homepage = () => {
   return (
     <>
@@ -14,10 +15,11 @@ const Homepage = () => {
           loop
           style={{}}
         />
-        <div className="w-full h-full bg-[rgba(0,0,0,0.2)]"></div>
-        <div className="absolute top-0 w-full flex flex-col gap-4">
+        <div className="w-full h-full bg-[rgba(0,0,0,0.7)]"></div>
+        <div className="absolute top-0 w-full flex flex-col justify-center gap-4">
           <Navbar />
-          <h3 class="text-white text-center font-bold mt-56 ">Welcome to Mining</h3>
+          <Welcome/>
+          <Containers/>
         </div>
       </div>
     </>
