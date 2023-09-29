@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@500&family=Rubik:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,5 +7,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Proza Libre', sans-serif;
   /* color: rgba(208, 208, 40, 0.692); */
+}
+.transforming{
+ transition: all 0.4s;}
+
+.texter{
+  scale: 0;
+  display: none;
+  transition: all 0.5s;
+}
+.transforming:hover > .texter{
+display:block ;
+scale: 1;
+}
+.MuiPaper-root{
+  box-shadow: 0px;
 }

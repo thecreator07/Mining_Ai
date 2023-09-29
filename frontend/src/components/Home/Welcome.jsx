@@ -25,7 +25,8 @@ const Welcome = () => {
             color: "#CCCCCC",
             wordSpacing: "",
             padding: "0.25rem 1rem",
-            backgroundColor: "#333333",
+            backgroundColor: "black",
+            fontWeight:"500"
           }}
         >
           Start&nbsp;<span className="text-yellow-600"> Exploring </span>
